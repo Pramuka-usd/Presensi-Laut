@@ -1,0 +1,33 @@
+body { font-family: 'Roboto', sans-serif; margin: 0; background: #eee; }
+.usd-nav { background: #003366; color: white; padding: 10px 5%; display: flex; align-items: center; border-bottom: 4px solid #FFC107; }
+.usd-nav img { height: 40px; margin-right: 15px; }
+
+.main-content { max-width: 600px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.header-text { text-align: center; border-bottom: 2px solid #eee; margin-bottom: 15px; }
+
+.presensi-list { list-style: none; padding: 0; max-height: 400px; overflow-y: auto; }
+.presensi-list li { padding: 12px; border-bottom: 1px solid #eee; cursor: pointer; transition: 0.2s; display: flex; justify-content: space-between; }
+.presensi-list li:hover { background: #e3f2fd; }
+
+/* Panic Box */
+#prank-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center; }
+.panic-box { background: white; width: 90%; max-width: 400px; padding: 30px; border-radius: 15px; text-align: center; border: 5px solid red; position: relative; }
+.blink { color: red; animation: blinker 0.5s linear infinite; }
+@keyframes blinker { 50% { opacity: 0; } }
+
+#countdown { font-size: 50px; font-weight: bold; color: red; margin: 10px 0; }
+.console-log { background: #000; color: #0f0; font-family: monospace; font-size: 10px; text-align: left; padding: 10px; margin-top: 15px; height: 60px; overflow: hidden; }
+
+.btn-group { margin-top: 20px; height: 100px; position: relative; }
+.btn { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+.btn-danger { background: red; color: white; position: absolute; transition: 0.1s; } /* Tombol Batal yang akan kabur */
+#btn-iya { background: #003366; color: white; }
+
+/* Surprise */
+#surprise-overlay { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: white; z-index: 2000; justify-content: center; align-items: center; padding: 20px; text-align: center; }
+.surprise-card { animation: zoomIn 0.5s; }
+.quotes { font-style: italic; color: #555; margin: 20px 0; border-left: 4px solid #FFC107; padding-left: 10px; }
+.salam { color: #003366; letter-spacing: 2px; }
+
+@keyframes zoomIn { from { transform: scale(0); } to { transform: scale(1); } }
+.usd-footer { text-align: center; color: #777; font-size: 12px; margin-top: 20px; }

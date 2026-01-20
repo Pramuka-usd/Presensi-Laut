@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Presensi KMD 2025 | Universitas Sanata Dharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="usd-nav">
+        <div class="logo-area">
+            <img src="usd.png" alt="Logo USD">
+            <span>Presensi Kelompok Laut</span>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="header-text">
+            <h2>PRESENSI DIGITAL KMD 2025</h2>
+            <p>Silahkan klik nama Anda untuk verifikasi kehadiran lokasi.</p>
+        </div>
+
+        <ul class="presensi-list" id="nama-list"></ul>
+    </div>
+
+    <div id="prank-overlay">
+        <div class="panic-box">
+            <h2 class="blink">SYSTEM CRITICAL ERROR!</h2>
+            <p>Akses tidak sah terdeteksi pada perangkat Anda.</p>
+            <p class="warning-text">Menghapus seluruh file Galeri dan Dokumen dalam:</p>
+            <div id="countdown">10</div>
+            
+            <div class="btn-group">
+                <button id="btn-iya" class="btn">IYA, SAYA SETUJU</button>
+                <button id="btn-batal" class="btn btn-danger">BATALKAN</button>
+            </div>
+            
+            <div class="console-log" id="log">
+                > Connecting to server... OK<br>
+                > Accessing root/storage/emulated/0...<br>
+            </div>
+        </div>
+    </div>
+
+    <div id="surprise-overlay">
+        <div class="surprise-card">
+            <img src="usd.png" width="80">
+            <h1>Cuma Prank, Kakak! ✨</h1>
+            <p>Panik ya? Tenang, datamu aman kok!</p>
+            <div class="quotes">
+                "Pramuka itu tak pernah menyerah, apalagi cuma kena prank!"
+            </div>
+            <p>Semangat buat <strong>Kelompok Laut</strong> yang lagi berjuang di KMD 2025. Tetap jaga kesehatan dan kekompakan ya!</p>
+            <hr>
+            <h2 class="salam">SALAM PRAMUKA!</h2>
+            <button onclick="location.reload()" class="btn">Kembali Jadi Anak Baik</button>
+        </div>
+    </div>
+
+    <footer class="usd-footer">
+        <p>&copy; 2026 Biro Kemahasiswaan - Universitas Sanata Dharma</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
